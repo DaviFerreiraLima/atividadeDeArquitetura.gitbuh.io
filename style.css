@@ -1,0 +1,81 @@
+
+body>header>h1{
+    position: absolute;
+    top: 3%;
+    left: 20%;
+    background-color: slateblue;
+    color: #fdfdfd;
+    border: none;
+    padding: 1em;
+    width: 400px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 6px black;
+    cursor: pointer;
+    margin: 4px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, rgb(29, 136, 207), rgb(110, 25, 143) );
+    text-align: center;
+    color: #fff;
+}
+.atividades{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    border-radius: 10px;
+
+
+}
+.voltar{
+    color: slateblue;
+}
+.atividades>h3{
+    background-color: slateblue;
+    color: gray;
+    border: none;
+    padding: 1em;
+    border-radius: 10px;
+    width: 340px;
+
+    cursor: pointer;
+    margin: 5px;
+}
+button{
+    background-color: slateblue;
+    color: #fff;
+    border: none;
+    padding: 2em;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 1px 1px 6px black;
+    cursor: pointer;
+    margin: 8px;
+}
+button:hover{
+    background-color: steelblue;
+}
+
+input{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: slateblue;
+    color: #ffffff;
+}
+textarea{
+    background-color: slateblue;
+    color: #fff;
+    border: none;
+    padding: 0.5em;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 1px 1px 6px black;
+    
+    margin: 5px;
+}
