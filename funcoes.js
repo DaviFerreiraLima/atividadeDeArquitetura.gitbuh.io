@@ -35,5 +35,37 @@ function atv5Litros(){
     document.getElementById('text-area').innerHTML=texto
 }
 
+function atv1ImparOupar(){
+    let valor= parseFloat(document.getElementById('valor').value)
+    let resposta=""
+    if(valor%2==0){
+        resposta="É par"
+    }else{
+        resposta="É impar"
+    }
+
+
+    document.getElementById('text-area').innerHTML=resposta
+}
+
+function atv2Nulo(){
+    let valor= parseFloat(document.getElementById('valor').value)
+    let resposta=""
+    if(valor>0){
+        resposta="É Positivo"
+    }else if(valor<0){
+        resposta="É Negativo"
+    }else{
+        resposta="É Nulo"
+
+    }
+
+
+    document.getElementById('text-area').innerHTML=resposta 
+}
+
+function atv3Valor(){
+    
+}
 
    
