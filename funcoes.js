@@ -64,8 +64,61 @@ function atv2Nulo(){
     document.getElementById('text-area').innerHTML=resposta 
 }
 
-function atv3Valor(){
-    
+function atv3SomaEOpera(){
+    let numero1= parseFloat(document.getElementById('valor1').value)
+    let numero2 =parseFloat(document.getElementById('valor2').value)
+
+    let resposta= ""
+        if((numero1+numero2)>20){
+        resposta = (numero1+numero2)+8
+        }else{
+        resposta= (numero1+numero2)-5
+        }
+        document.getElementById('text-area').innerHTML=resposta 
+    }
+   
+function atv4Prestacao(){
+    let salario= parseFloat(document.getElementById('salario').value)
+    let prestacao =parseFloat(document.getElementById('prestacao').value)
+    let resposta=""
+
+    if(prestacao>(40*salario/100)){
+        resposta="Empréstimo não pode ser concedido"
+    }else{
+        resposta="Empréstimo pode ser concedido"
+    }
+    document.getElementById('text-area').innerHTML=resposta 
 }
 
-   
+function atv5Aceitacao(){
+    let sexo = parseFloat(document.getElementById('sexo').value)
+    let idade =parseFloat(document.getElementById('idade').value)
+    let nome = String(document.getElementById('nome').value)
+    let resposta=""
+
+    if(sexo==1 && idade<25){
+        resposta=`${nome} foi ACEITO(A)`
+    }
+    else{
+        resposta=`${nome} NÃO FOI foi ACEITO(A)`
+    }
+    document.getElementById('text-area').innerHTML=resposta 
+}
+
+function atv6Media(){
+    let nome = String(document.getElementById('nome').value)
+    let nota1= parseFloat(document.getElementById('valor1').value)
+    let nota2 =parseFloat(document.getElementById('valor2').value)
+    let media= (nota1+nota2)/2
+    let resposta
+
+    if(media>=7){
+         resposta =`Aluno ${nome} foi aprovado com média de: ${media} \n Nota 1: ${nota1}\n Nota 2: ${nota2} `
+
+    }else if( media>=3 && media<7){
+         resposta=`Aluno ${nome} foi posto em Prova Final com média de: ${media} \n Nota 1: ${nota1}\n Nota 2: ${nota2} `
+    }else{
+         resposta=`Aluno ${nome} foi reprovado com média de: ${media} \n Nota 1: ${nota1}\n Nota 2: ${nota2} `
+    }
+    document.getElementById('text-area').innerHTML=resposta 
+}

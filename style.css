@@ -2,7 +2,7 @@
 body>header>h1{
     position: absolute;
     top: 5%;
-    left: 36%;
+    left: 37%;
     background-color: slateblue;
     color: #fdfdfd;
     border: none;
@@ -21,6 +21,18 @@ body{
 }
 .atividades{
     position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    border-radius: 10px;
+
+
+}
+.aplicacao{
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -31,6 +43,7 @@ body{
 
 
 }
+
 .voltar{
     color: slateblue;
 }
@@ -68,6 +81,16 @@ input{
     background-color: slateblue;
     color: #ffffff;
 }
+
+select{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: slateblue;
+    color: #ffffff;
+}
+
 textarea{
     background-color: slateblue;
     color: #fff;
